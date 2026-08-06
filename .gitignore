@@ -1,0 +1,24 @@
+# Build caches and toolchain artifacts
+lean/.lake/
+lean/build/
+.lake/
+build/
+dist/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated search / scan output (regenerable, ~1.4 GB)
+out_search/
+tmp/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

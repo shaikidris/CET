@@ -1,0 +1,80 @@
+/-
+Copyright (c) 2026 Idris Ali Shaik. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Idris Ali Shaik
+-/
+import CollatzEndpointTransport.Linear.Main
+import CollatzEndpointTransport.Linear.PaperDependencyAudit
+
+/-!
+# Manuscript axiom audit
+
+Article-level replay and axiom-audit surface for the accompanying manuscript.
+
+This module deliberately excludes periodic-orbit and open research branches.
+Building it checks the fixed-total central Renyi estimate, nonlinear pullback,
+endpoint-only bootstrap, Main Theorem, quantitative corollaries, and retained
+full-envelope companion through the referee-facing API in `Linear.Main`.
+-/
+
+-- Fixed-total central Renyi input and pullback.
+#print axioms CollatzEndpointTransport.FixedTotal.fixedRenyiMoment_central_le
+#print axioms CollatzEndpointTransport.FixedTotal.centralEndpointInformation_le
+#print axioms CollatzEndpointTransport.FixedTotal.centralRenyiRatio_one_half_eq_unrestrictedReverseSpendRatio
+#print axioms CollatzEndpointTransport.FixedTotal.collatzPullback_dense_centralRenyi
+
+-- Endpoint-only bootstrap and exact endpoint.
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.centralRenyiEndpointOnlyTheorem_of_transport
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.centralRenyiEndpointHeadlineExponent_eq
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.centralRenyiEndpointDecimal_lt_headline
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.centralRenyiEndpointOnlyTheorem_one
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.centralRenyiEndpointOnlyTheorem_timed
+#print axioms
+  CollatzEndpointTransport.OptimizedLinearPullback.centralRenyiEndpointOnlyTheorem_exceptional_count_at_exponent
+#print axioms
+  CollatzEndpointTransport.OptimizedLinearPullback.centralRenyiEndpointOnlyTheorem_timed_exceptional_count
+#print axioms
+  CollatzEndpointTransport.OptimizedLinearPullback.centralRenyiEndpointTimedDescentSet_hasNaturalDensityOne
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.iterate_le_endpointChain_ceiling
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.fixedPowerDensityExponentLimit_eq
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.centralRenyi_fixedPower_density
+
+-- Referee-facing statements.
+#print axioms CollatzEndpointTransport.QuantitativeCollatzMain.centralRenyiEndpointAdmissibleExponent_eq_paper
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.collatz_central_renyi_endpoint_natural_density_descent
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.collatz_explicit_subpower_natural_density_descent
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.explicitSubpowerExponent_pos
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.explicitSubpowerExponent_antitone
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.explicitSubpowerExponent_tendsto_zero
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.explicitSubpowerExponent_eventually_eq
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.collatz_almost_all_first_passage_laws
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.powerDescentSet_firstPassage_profile_bound
+#print axioms
+  CollatzEndpointTransport.OptimizedLinearPullback.powerDescentSet_badPrefix_eventually_le_stretched_log
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.collatz_central_renyi_endpoint_decimal_natural_density_descent
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.collatz_central_renyi_endpoint_exceptional_count_at_exponent
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.collatz_central_renyi_endpoint_natural_density_descent_timed
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.collatz_central_renyi_endpoint_timed_exceptional_count
+#print axioms CollatzEndpointTransport.QuantitativeCollatzMain.collatz_central_renyi_fixed_power_density
+
+-- Retained comparison theorems in the same manuscript.
+#print axioms CollatzEndpointTransport.QuantitativeCollatzMain.collatz_endpoint_only_natural_density_descent
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.exists_optimized_linear_parameters
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.powerDescentSet_hasNaturalDensityOne
+#print axioms CollatzEndpointTransport.OptimizedLinearPullback.mem_powerDescentSet_data
+#print axioms CollatzEndpointTransport.QuantitativeCollatzMain.collatz_stretched_log_natural_density_descent
+#print axioms CollatzEndpointTransport.QuantitativeCollatzMain.collatz_stretched_log_exceptional_count
+#print axioms
+  CollatzEndpointTransport.QuantitativeCollatzMain.collatz_stretched_log_natural_density_descent_timed

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  If you use this Lean development, please cite the software artifact and the
+  accompanying article.
+title: 'CollatzEndpointTransport: Lean formalization of quantitative Collatz descent'
+type: software
+version: 2.0.1
+doi: 10.5281/zenodo.21797535
+authors:
+  - family-names: Shaik
+    given-names: Idris Ali
+    email: shaikidris@apache.org
+    orcid: https://orcid.org/0009-0009-9699-9712
+repository-code: https://github.com/shaikidris/CET
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Shaik
+      given-names: Idris Ali
+      email: shaikidris@apache.org
+      orcid: https://orcid.org/0009-0009-9699-9712
+  title: Quantitative Collatz Descent to Stretched-Logarithmic Scale in Natural Density
+  year: 2026
