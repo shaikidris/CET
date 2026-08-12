@@ -1,4 +1,4 @@
-# Quantitative Collatz Descent to Stretched-Logarithmic Scale in Natural Density (Almost-all)
+# Quantitative Collatz Descent to Stretched-Logarithmic Scale in Natural Density (Almost all)
 CollatzEndpointTransport
 
 **Author:** Idris Ali Shaik
