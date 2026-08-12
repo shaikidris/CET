@@ -1,4 +1,5 @@
-# CollatzEndpointTransport
+# Quantitative Collatz Descent to Stretched-Logarithmic Scale in Natural Density 
+CollatzEndpointTransport
 
 **Author:** Idris Ali Shaik
 
